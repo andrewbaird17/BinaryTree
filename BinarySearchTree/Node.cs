@@ -12,7 +12,7 @@ namespace BinarySearchTree
         public int data;
         public Node leftChild;
         public Node rightChild;
-        public Node link;
+
 
         //Constructor
         public Node(int data)

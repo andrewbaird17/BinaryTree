@@ -10,7 +10,8 @@ namespace BinarySearchTree
     {
         //Member Variables (HAS A)
         Node start;
-        
+        Node recent;
+
         //Constructor
         public BinSearchTree()
         {
@@ -24,16 +25,11 @@ namespace BinarySearchTree
             if (start == null)
             {
                 start = node;
-                
             }
             else
             {
                 Node current = start;
-                while (current.link != null)
-                {
-                    current = current.link;
-                }
-                current.link = node;
+                
             }
         }
 
