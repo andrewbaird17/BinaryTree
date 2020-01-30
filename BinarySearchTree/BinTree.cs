@@ -64,5 +64,38 @@ namespace BinarySearchTree
             }
         }
 
+        public bool Search(int data)
+        {
+            current = root;
+            while (true)
+            {
+                if (data == current.data)
+                {
+                    return true;
+                }
+                else if (data > current.data)
+                {
+                    if (current.rightChild == null)
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        current = current.rightChild;
+                    }
+                }
+                else if (data < current.data)
+                {
+                    if (current.leftChild == null)
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        current = current.leftChild;
+                    }
+                }
+            }
+        }
     }
 }

@@ -20,6 +20,10 @@ namespace BinarySearchTree
             BST.Add(95);
             BST.Add(100);
 
+
+            bool success = BST.Search(21);
+            Console.WriteLine(success);
+            Console.ReadLine();
         }
     }
 }
