@@ -10,10 +10,15 @@ namespace BinarySearchTree
     {
         static void Main(string[] args)
         {
-            BinSearchTree BST = new BinSearchTree();
+            BinTree BST = new BinTree();
             BST.Add(50);
-            BST.Add(30);
-            BST.Add(16);
+            BST.Add(35);
+            BST.Add(75);
+            BST.Add(20);
+            BST.Add(40);
+            BST.Add(60);
+            BST.Add(95);
+            BST.Add(100);
 
         }
     }
